@@ -13,7 +13,7 @@ export default {
         bgSecondary: 'hsl(0, 0%, 12%)',
       },
       fontFamily: {
-        outfit: ['Outfit', ...defaultTheme.fontFamily.sans],
+        inter: ['Inter', ...defaultTheme.fontFamily.sans],
       },
     },
   },
