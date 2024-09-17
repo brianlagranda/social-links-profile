@@ -1,28 +1,29 @@
-import SocialLinksProfile from './components/SocialLinksProfile';
+import SocialLinksProfile from "./components/SocialLinksProfile";
+import profileData from "../src/data/profile.json";
 
 function App() {
   return (
     <>
-      <header className='select-none flex flex-col justify-center items-center'>
-        <h1 className='text-center text-3xl font-bold font-figtree text-wrap mx-auto'>
-          Blog Preview Card
+      <header className="flex select-none flex-col items-center justify-center text-tPrimary">
+        <h1 className="mx-auto text-wrap text-center font-inter text-3xl font-bold">
+          Social Links Profile
         </h1>
         <a
-          href='https://www.frontendmentor.io/'
-          className='hover:text-white text-center text-3xl font-bold font-figtree text-wrap mx-auto mb-6'
+          href="https://www.frontendmentor.io/"
+          className="mx-auto mb-6 text-wrap text-center font-inter text-3xl font-bold hover:text-tSecondary"
         >
           Frontendmentor.io
         </a>
       </header>
       <main>
-        <SocialLinksProfile />
+        <SocialLinksProfile profile={profileData} />
       </main>
       <footer>
-        <p className='text-center text-xl font-bold font-figtree mt-6'>
+        <p className="mt-6 text-center font-inter text-xl font-bold text-tPrimary">
           Coded by
           <a
-            href='https://github.com/brianlagranda'
-            className='hover:text-white pl-1'
+            href="https://github.com/brianlagranda"
+            className="pl-1 hover:text-tSecondary"
           >
             Brian Lagranda
           </a>
