@@ -1,0 +1,29 @@
+{
+  "userId": 1,
+  "name": "Jessica Randall",
+  "avatarURL": "../assets/avatar-jessica.jpeg",
+  "location": "London, United Kingdom",
+  "description": "\"Front-end developer and avid reader.\"",
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/"
+    },
+    {
+      "name": "Frontend Mentor",
+      "url": "https://www.frontendmentor.io/"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://x.com/"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/"
+    }
+  ]
+}
