@@ -8,7 +8,6 @@ type socialLinksType = {
 type profileType = {
   userId: number;
   name: string;
-  avatarURL: string;
   location: string;
   description: string;
   socialLinks: socialLinksType[];
@@ -20,7 +19,7 @@ interface ProfileProps {
 
 const SocialLinksProfile: React.FC<ProfileProps> = ({ profile }) => {
   return (
-    <aside className="xs:p-6 flex h-full w-full select-none flex-col items-center justify-center gap-4 rounded-xl bg-bgSecondary p-4 text-center font-inter sm:p-10">
+    <aside className="flex h-full w-full select-none flex-col items-center justify-center gap-4 rounded-xl bg-bgSecondary p-4 text-center font-inter xs:p-6 sm:p-10">
       <div className="flex flex-col items-center gap-6">
         <img src={avatarURL} className="h-[5.5rem] w-[5.5rem] rounded-full" />
         <div className="flex flex-col gap-2">
@@ -36,7 +35,7 @@ const SocialLinksProfile: React.FC<ProfileProps> = ({ profile }) => {
       {profile.socialLinks.map((socialLink, index) => (
         <div
           key={index}
-          className="xs:w-72 h-[2.8rem] w-64 content-center rounded-md bg-bgButton text-sm font-semibold text-tPrimary hover:cursor-pointer hover:bg-tSecondary hover:text-bgSecondary sm:w-[19rem]"
+          className="h-[2.8rem] w-64 content-center rounded-md bg-bgButton text-sm font-semibold text-tPrimary hover:cursor-pointer hover:bg-tSecondary hover:text-bgSecondary xs:w-72 sm:w-[19rem]"
         >
           <a
             href={socialLink.url}
